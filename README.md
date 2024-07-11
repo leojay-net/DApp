@@ -37,4 +37,4 @@
 
 - To connect your own contract
 
-    Update the `/next.config.js` env variables `CONTRACT_ADDRESS` and `ABI`
+    Update the `/next.config.js` env variables `CONTRACT_ADDRESS` and `ABI`# DApp
