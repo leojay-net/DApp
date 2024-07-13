@@ -2,6 +2,10 @@
 
 This project implements a smart contract system for managing organizations and their associated tokens on the Ethereum blockchain. It consists of two main contracts: `organizationContract` and `tokenContract`.
 
+## Description
+
+This system allows for the creation and management of organizations, each with its own associated token. It provides functionality for adding stakeholders, managing stakeholder types, and controlling token distribution through a whitelisting mechanism.
+
 ## Features
 
 ### Organization Management
@@ -14,6 +18,20 @@ This project implements a smart contract system for managing organizations and t
 ### Token Management
 - Create custom tokens for each organization
 - Associate tokens with organizations
+
+## Getting Started
+
+### Executing program
+
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+
+Once you are on the Remix website, create two new files by clicking on the "+" icon in the left-hand sidebar. Save them with .sol extensions (e.g., organizationContract.sol and tokenContract.sol). Copy and paste the respective contract code into each file.
+
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to a compatible version, and then click on the "Compile" button for each contract.
+
+Once the code is compiled, you can deploy the contracts by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. First deploy the `tokenContract`, then deploy the `organizationContract`, passing the address of the `tokenContract` to its constructor.
+
+After deployment, you can interact with the contracts using the provided functions in the Remix interface.
 
 ## Contract Details
 
@@ -48,3 +66,8 @@ To use this system:
 5. Create stakeholders using `createStakeholder`
 6. Whitelist addresses for token claiming with `whiteList`
 7. Allow stakeholders to claim tokens using `claimToken`
+
+## Authors
+
+Aleonomoh Joseph
+
